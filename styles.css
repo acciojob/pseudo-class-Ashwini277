@@ -8,7 +8,7 @@
 
 /* Style for the ::before pseudo-element */
 #container::before {
-    content: "Before text"; /* Content to display before the container */
+    content: "Before Element"; /* Updated content to match test expectation */
     color: #f00; /* Red color */
     font-size: 20px; /* Font size */
     position: absolute;
@@ -18,7 +18,7 @@
 
 /* Style for the ::after pseudo-element */
 #container::after {
-    content: "After text"; /* Content to display after the container */
+    content: "After Element"; /* Updated content to match test expectation */
     color: #f00; /* Red color */
     font-size: 20px; /* Font size */
     position: absolute;
