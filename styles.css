@@ -1,17 +1,27 @@
+/* styles.css */
+
+/* Style for the container */
 #container {
     margin: 20px;
-    position: relative;
-    font-size: 20px;
+    position: relative; /* Ensure pseudo-elements are positioned relative to the container */
 }
 
+/* Pseudo-element before the content */
 #container::before {
-    content: "Special text before - ";
-    color: #f00;
-    font-size: 20px;
+    content: "Before text"; /* Text to be displayed before the container content */
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size of 20px */
+    position: absolute; /* Position absolutely to control placement */
+    top: -30px; /* Adjust top value to position before the container */
+    left: 0; /* Align with the left edge of the container */
 }
 
+/* Pseudo-element after the content */
 #container::after {
-    content: " - Special text after";
-    color: #f00;
-    font-size: 20px;
+    content: "After text"; /* Text to be displayed after the container content */
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size of 20px */
+    position: absolute; /* Position absolutely to control placement */
+    bottom: -30px; /* Adjust bottom value to position after the container */
+    left: 0; /* Align with the left edge of the container */
 }
